@@ -12,20 +12,21 @@
   >
 
   <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- =========================
+       HEADER
+  ========================== -->
   <header class="header">
-    <div class="container nav-container">
+    <div class="container header-container">
 
-      <a href="#inicio" class="logo">
-        <span>Sermas</span><strong>tech</strong>
+      <a href="#inicio" class="logo" aria-label="Sermastech - Inicio">
+        Serma<span>stech</span>
       </a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#equipos">Equipos</a>
@@ -34,15 +35,19 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <div class="nav-actions">
-        <a href="#contacto" class="btn btn-primary">
+      <div class="header-actions">
+        <a
+          href="#contacto"
+          class="btn btn-primary header-btn"
+        >
           Solicitar servicio
         </a>
 
         <a
-          href="https://wa.me/"
+          href="https://wa.me/573000000000"
           class="whatsapp-header"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Escríbenos por WhatsApp"
         >
           WhatsApp
@@ -55,26 +60,29 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+    ========================== -->
     <section class="hero" id="inicio">
 
-      <div class="container hero-content">
+      <div class="container hero-container">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
-          <p class="eyebrow">
-            SERVICIO TÉCNICO ESPECIALIZADO
-          </p>
+          <div class="eyebrow">
+            <span></span>
+            Servicio técnico especializado
+          </div>
 
           <h1>
             Mantenemos en marcha<br>
-            las cocinas que <span>no<br>
-            pueden detenerse.</span>
+            las cocinas que<br>
+            <strong>no pueden detenerse.</strong>
           </h1>
 
           <p class="hero-description">
-            Servicio técnico especializado para equipos
-            gastronómicos industriales.
+            Servicio técnico especializado para equipos gastronómicos
+            industriales. Respondemos cuando tu operación más lo necesita.
           </p>
 
           <div class="hero-features">
@@ -97,23 +105,30 @@
           </div>
 
           <div class="hero-buttons">
-
-            <a href="#contacto" class="btn btn-primary btn-large">
+            <a href="#contacto" class="btn btn-primary">
               Solicitar servicio
             </a>
 
-            <a href="#" class="btn btn-secondary btn-large">
+            <a
+              href="https://wa.me/573000000000"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Escríbenos por WhatsApp
             </a>
-
           </div>
 
         </div>
 
-        <div class="hero-image">
+
+        <div class="hero-visual">
+
+          <!-- REEMPLAZAREMOS ESTA FOTO EN EL SIGUIENTE PASO -->
           <div class="hero-image-placeholder">
-            FOTO DEL TÉCNICO DE SERMASTECH
+            <span>Foto del técnico de Sermastech</span>
           </div>
+
         </div>
 
       </div>
@@ -121,22 +136,24 @@
     </section>
 
 
-    <!-- PROBLEMA -->
-    <section class="problem section">
+    <!-- =========================
+         PROBLEMA
+    ========================== -->
+    <section class="problem" id="nosotros">
 
-      <div class="container problem-grid">
+      <div class="container problem-container">
 
         <div class="problem-image">
-          FOTO DE COCINA PROFESIONAL
+          <div class="section-image-placeholder">
+            <span>Operación gastronómica</span>
+          </div>
         </div>
 
         <div class="problem-content">
 
-          <p class="eyebrow">CUANDO UN EQUIPO FALLA</p>
-
           <h2>
             Cuando un equipo falla,<br>
-            toda tu operación se detiene.
+            <strong>toda tu operación se detiene.</strong>
           </h2>
 
           <p>
@@ -144,24 +161,28 @@
             Nuestro trabajo es evitar que eso ocurra.
           </p>
 
-          <div class="problem-items">
+          <div class="problem-points">
 
-            <div>
+            <div class="problem-point">
+              <div class="problem-icon">◌</div>
               <strong>Producción</strong>
-              <span>detenida</span>
+              <span>retrasada</span>
             </div>
 
-            <div>
+            <div class="problem-point">
+              <div class="problem-icon">◎</div>
               <strong>Pedidos</strong>
               <span>retrasados</span>
             </div>
 
-            <div>
+            <div class="problem-point">
+              <div class="problem-icon">◈</div>
               <strong>Mayor</strong>
               <span>estrés</span>
             </div>
 
-            <div>
+            <div class="problem-point">
+              <div class="problem-icon">♙</div>
               <strong>Clientes</strong>
               <span>insatisfechos</span>
             </div>
@@ -175,72 +196,147 @@
     </section>
 
 
-    <!-- SERVICIOS -->
-    <section class="services section" id="servicios">
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+    <section class="services" id="servicios">
 
       <div class="container">
 
         <div class="section-heading">
-
-          <p class="eyebrow">SERVICIOS</p>
-
+          <span class="section-kicker">Nuestros servicios</span>
           <h2>¿Cómo te ayudamos?</h2>
-
           <p>
-            Soluciones técnicas para mantener tus equipos funcionando
-            y tu operación en marcha.
+            Acompañamos tu operación antes, durante y después de una falla.
           </p>
-
         </div>
+
 
         <div class="services-grid">
 
           <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Mantenimiento preventivo</h3>
-            <p>
-              Anticipamos las fallas antes de que afecten tu operación.
-            </p>
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Mantenimiento</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon orange">◉</div>
+
+              <h3>Mantenimiento preventivo</h3>
+
+              <p>
+                Anticipamos fallas antes de que afecten tu operación.
+              </p>
+            </div>
+
           </article>
 
-          <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Mantenimiento correctivo</h3>
-            <p>
-              Respondemos rápido para que vuelvas a operar cuanto antes.
-            </p>
-          </article>
 
           <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Diagnóstico técnico</h3>
-            <p>
-              Encontramos la causa del problema y te damos una solución.
-            </p>
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Reparación</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon red">×</div>
+
+              <h3>Mantenimiento correctivo</h3>
+
+              <p>
+                Respondemos rápido para que vuelvas a operar cuanto antes.
+              </p>
+            </div>
+
           </article>
 
-          <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Instalación y puesta en marcha</h3>
-            <p>
-              Dejamos tus equipos listos para funcionar correctamente.
-            </p>
-          </article>
 
           <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Repuestos originales</h3>
-            <p>
-              Utilizamos repuestos adecuados para proteger tu inversión.
-            </p>
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Diagnóstico</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon blue">⌕</div>
+
+              <h3>Diagnóstico técnico</h3>
+
+              <p>
+                Encontramos la causa del problema y te explicamos la solución.
+              </p>
+            </div>
+
           </article>
 
+
           <article class="service-card">
-            <div class="service-image">FOTO</div>
-            <h3>Asesoría personalizada</h3>
-            <p>
-              Te acompañamos para que tomes mejores decisiones técnicas.
-            </p>
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Instalación</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon cyan">◌</div>
+
+              <h3>Instalación y puesta en marcha</h3>
+
+              <p>
+                Equipos listos para funcionar correctamente desde el primer día.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Repuestos</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon orange">⚙</div>
+
+              <h3>Repuestos originales</h3>
+
+              <p>
+                Usamos componentes originales para mayor seguridad y desempeño.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">
+              <div class="service-image-placeholder">
+                <span>Asesoría</span>
+              </div>
+            </div>
+
+            <div class="service-card-content">
+              <div class="service-icon dark">◈</div>
+
+              <h3>Asesoría personalizada</h3>
+
+              <p>
+                Te orientamos sobre uso, limpieza y mantenimiento para cuidar tus equipos.
+              </p>
+            </div>
+
           </article>
 
         </div>
@@ -250,8 +346,10 @@
     </section>
 
 
-    <!-- MARCAS -->
-    <section class="brands">
+    <!-- =========================
+         MARCAS
+    ========================== -->
+    <section class="brands" id="equipos">
 
       <div class="container">
 
@@ -259,13 +357,14 @@
           Trabajamos con las mejores marcas del sector
         </p>
 
-        <div class="brands-list">
+        <div class="brands-row">
           <span>UNOX</span>
-          <span>MEITA</span>
+          <span>MELITA</span>
+          <span>KAVE</span>
           <span>KRUPPS</span>
-          <span>WINTERHALTER</span>
+          <span>Winterhalter</span>
           <span>BUNN</span>
-          <span>UGOLINI</span>
+          <span>Ugolini</span>
           <span>RATIONAL</span>
         </div>
 
@@ -274,29 +373,52 @@
     </section>
 
 
-    <!-- DIFERENCIALES -->
-    <section class="stats section" id="nosotros">
+    <!-- =========================
+         DIFERENCIALES
+    ========================== -->
+    <section class="stats">
 
-      <div class="container stats-grid">
+      <div class="container stats-container">
 
-        <div class="stat">
-          <strong>+500</strong>
-          <span>Equipos atendidos</span>
+        <div class="stats-brands">
+
+          <p>Centros de servicio autorizados de:</p>
+
+          <div class="authorized-brands">
+            <strong>UNOX</strong>
+            <strong>KRUPPS</strong>
+            <strong>nicorp</strong>
+          </div>
+
         </div>
 
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Cobertura nacional</span>
-        </div>
 
-        <div class="stat">
-          <strong>+</strong>
-          <span>Técnicos especializados</span>
-        </div>
+        <div class="stats-grid">
 
-        <div class="stat">
-          <strong>Rápida</strong>
-          <span>Respuesta técnica</span>
+          <div class="stat-item">
+            <div class="stat-icon">♧</div>
+            <strong>+500</strong>
+            <span>Equipos atendidos</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">◔</div>
+            <strong>Cobertura</strong>
+            <span>nacional</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">✣</div>
+            <strong>Técnicos</strong>
+            <span>especializados</span>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">↻</div>
+            <strong>Respuesta</strong>
+            <span>rápida</span>
+          </div>
+
         </div>
 
       </div>
@@ -304,31 +426,56 @@
     </section>
 
 
-    <!-- TRABAJOS -->
-    <section class="works section" id="equipos">
+    <!-- =========================
+         NUESTROS TRABAJOS
+    ========================== -->
+    <section class="works">
 
       <div class="container">
 
         <div class="section-heading">
-
-          <p class="eyebrow">NUESTROS TRABAJOS</p>
-
+          <span class="section-kicker">Experiencia real</span>
           <h2>Algunos de nuestros trabajos</h2>
-
         </div>
+
 
         <div class="works-grid">
 
-          <div class="work-item">FOTO</div>
-          <div class="work-item">FOTO</div>
-          <div class="work-item">FOTO</div>
-          <div class="work-item">FOTO</div>
-          <div class="work-item">FOTO</div>
+          <div class="work-card">
+            <div class="work-image-placeholder">
+              <span>Trabajo 01</span>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-image-placeholder">
+              <span>Trabajo 02</span>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-image-placeholder">
+              <span>Trabajo 03</span>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-image-placeholder">
+              <span>Trabajo 04</span>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-image-placeholder">
+              <span>Trabajo 05</span>
+            </div>
+          </div>
 
         </div>
 
-        <div class="center-button">
-          <a href="#" class="btn btn-outline">
+
+        <div class="works-action">
+          <a href="#contacto" class="btn btn-outline-dark">
             Ver más trabajos
           </a>
         </div>
@@ -338,38 +485,46 @@
     </section>
 
 
-    <!-- COBERTURA -->
-    <section class="coverage section" id="cobertura">
+    <!-- =========================
+         COBERTURA
+    ========================== -->
+    <section class="coverage" id="cobertura">
 
-      <div class="container coverage-grid">
+      <div class="container coverage-container">
 
-        <div>
+        <div class="coverage-content">
 
-          <p class="eyebrow">COBERTURA</p>
+          <span class="section-kicker">
+            Cobertura
+          </span>
 
           <h2>Estamos donde nos necesitas</h2>
 
           <p>
-            Atendemos clientes en todo Colombia, con mayor presencia
-            en las principales ciudades.
+            Atendemos clientes en todo Colombia,
+            con mayor presencia en las principales ciudades.
           </p>
 
-          <div class="cities">
 
-            <span>● Bogotá</span>
-            <span>● Medellín</span>
-            <span>● Barranquilla</span>
-            <span>● Cartagena</span>
-            <span>● Boyacá</span>
-            <span>● Pasto</span>
-            <span>● Y muchas más</span>
+          <div class="cities-list">
+
+            <span>📍 Bogotá</span>
+            <span>📍 Medellín</span>
+            <span>📍 Barranquilla</span>
+            <span>📍 Cartagena</span>
+            <span>📍 Boyacá</span>
+            <span>📍 Pasto</span>
+            <span>📍 Y muchas más</span>
 
           </div>
 
         </div>
 
-        <div class="map-placeholder">
-          MAPA DE COLOMBIA
+
+        <div class="coverage-map">
+          <div class="map-placeholder">
+            <span>Mapa de Colombia</span>
+          </div>
         </div>
 
       </div>
@@ -377,13 +532,14 @@
     </section>
 
 
-    <!-- CTA FINAL -->
+    <!-- =========================
+         CTA FINAL
+    ========================== -->
     <section class="final-cta" id="contacto">
 
-      <div class="container final-cta-content">
+      <div class="container final-cta-container">
 
         <div>
-
           <h2>
             Tu negocio ya tiene suficientes preocupaciones.
           </h2>
@@ -391,18 +547,23 @@
           <p>
             De los equipos gastronómicos, nos encargamos nosotros.
           </p>
-
         </div>
 
-        <div class="cta-actions">
 
-          <a href="#" class="btn btn-white">
+        <div class="final-cta-action">
+
+          <a
+            href="https://wa.me/573000000000"
+            class="btn btn-white"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Solicitar asistencia →
           </a>
 
-          <a href="#" class="whatsapp-link">
-            o escríbenos por WhatsApp
-          </a>
+          <small>
+            ● escríbenos por WhatsApp
+          </small>
 
         </div>
 
@@ -413,59 +574,97 @@
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
   <footer class="footer">
 
-    <div class="container footer-grid">
+    <div class="container footer-container">
 
-      <div>
+      <div class="footer-brand">
 
-        <a href="#inicio" class="logo footer-logo">
-          <span>Sermas</span><strong>tech</strong>
+        <a href="#inicio" class="logo">
+          Serma<span>stech</span>
         </a>
 
         <p>
-          Servicio técnico especializado para equipos
-          gastronómicos industriales.
+          Servicio técnico especializado para
+          equipos gastronómicos industriales.
         </p>
 
       </div>
 
-      <div>
-        <h4>Navegación</h4>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#cobertura">Cobertura</a>
+
+      <div class="footer-column">
+
+        <h4>Servicios</h4>
+
+        <a href="#servicios">Mantenimiento preventivo</a>
+        <a href="#servicios">Mantenimiento correctivo</a>
+        <a href="#servicios">Diagnóstico técnico</a>
+        <a href="#servicios">Instalación</a>
+
       </div>
 
-      <div>
+
+      <div class="footer-column">
+
+        <h4>Empresa</h4>
+
+        <a href="#nosotros">Nosotros</a>
+        <a href="#equipos">Marcas</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#contacto">Contacto</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
         <h4>Contacto</h4>
-        <a href="#">WhatsApp</a>
-        <a href="#">Correo electrónico</a>
-        <a href="#contacto">Solicitar servicio</a>
+
+        <a href="tel:+573000000000">+57 300 000 0000</a>
+
+        <a
+          href="mailto:contacto@sermastech.com"
+        >
+          contacto@sermastech.com
+        </a>
+
+        <span>Colombia</span>
+
       </div>
 
     </div>
 
+
     <div class="container footer-bottom">
-      <span>© 2026 Sermastech. Todos los derechos reservados.</span>
+
+      <span>
+        © 2026 Sermastech. Todos los derechos reservados.
+      </span>
+
+      <span>
+        Servicio técnico especializado para equipos gastronómicos.
+      </span>
+
     </div>
 
   </footer>
 
 
-  <!-- WHATSAPP FLOTANTE -->
+  <!-- =========================
+       WHATSAPP FLOTANTE
+  ========================== -->
   <a
-    href="#"
+    href="https://wa.me/573000000000"
     class="whatsapp-floating"
+    target="_blank"
+    rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
   >
     WhatsApp
   </a>
-
-
-  <script src="script.js"></script>
 
 </body>
 </html>
