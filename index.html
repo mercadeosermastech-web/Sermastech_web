@@ -2,13 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sermastech | Servicio técnico para equipos gastronómicos</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Sermastech | Servicio técnico especializado</title>
 
   <meta
     name="description"
-    content="Servicio técnico especializado para equipos gastronómicos industriales. Mantenimiento, reparación, diagnóstico e instalación a nivel nacional."
+    content="Servicio técnico especializado para equipos gastronómicos industriales. Mantenimiento, reparación, diagnóstico e instalación."
   >
 
   <link rel="stylesheet" href="styles.css">
@@ -21,99 +25,143 @@
        ========================================= -->
 
   <header class="header">
+
     <div class="container nav-container">
 
-      <a href="#inicio" class="logo logo-image">
+      <a href="#inicio" class="logo" aria-label="Inicio Sermastech">
         <img
           src="images/ser+tech%20logo.svg"
           alt="Sermastech"
         >
       </a>
 
-      <nav class="nav">
-        <a href="#nosotros">Nosotros</a>
+      <nav class="nav" aria-label="Navegación principal">
         <a href="#servicios">Servicios</a>
-        <a href="#trabajos">Trabajos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#trabajos">Trabajos realizados</a>
         <a href="#cobertura">Cobertura</a>
       </nav>
 
       <div class="nav-actions">
-        <a href="#contacto" class="btn btn-primary">
+        <a
+          href="#contacto"
+          class="btn btn-primary"
+        >
           Solicitar servicio
         </a>
       </div>
 
     </div>
+
   </header>
 
 
-  <main>
+  <!-- =========================================
+       HERO
+       ========================================= -->
 
-    <!-- =========================================
-         HERO
-         ========================================= -->
+  <main>
 
     <section class="hero" id="inicio">
 
-      <div class="hero-background">
-        <img
-          src="images/banner/sermastech-hero.webp.png"
-          alt="Servicio técnico especializado Sermastech"
-        >
-      </div>
+      <div class="hero-glow"></div>
 
       <div class="container hero-content">
 
         <div class="hero-text">
 
-          <span class="eyebrow">
+          <p class="eyebrow">
             SERVICIO TÉCNICO ESPECIALIZADO
-          </span>
+          </p>
 
           <h1>
-            Cuando tu equipo se detiene,
-            <span>tu operación no puede esperar.</span>
+            Tu operación no puede detenerse.
+            <span>Nosotros tampoco.</span>
           </h1>
 
           <p class="hero-description">
-            Diagnóstico, mantenimiento y reparación especializada
-            para equipos gastronómicos e industriales.
-            Respondemos cuando tu operación más lo necesita.
+            Diagnóstico, mantenimiento, reparación e instalación
+            de equipos gastronómicos industriales. Respuesta técnica
+            especializada para que tu operación siga funcionando.
           </p>
 
           <div class="hero-features">
 
             <div class="hero-feature">
-              <span class="feature-icon">✓</span>
+              <div class="feature-icon">✓</div>
               <span>
-                Técnicos especializados
+                Atención técnica<br>
+                especializada
               </span>
             </div>
 
             <div class="hero-feature">
-              <span class="feature-icon">✓</span>
+              <div class="feature-icon">✓</div>
               <span>
-                Atención a nivel nacional
+                Repuestos<br>
+                originales
               </span>
             </div>
 
             <div class="hero-feature">
-              <span class="feature-icon">✓</span>
+              <div class="feature-icon">✓</div>
               <span>
-                Soporte para equipos industriales
+                Cobertura<br>
+                nacional
               </span>
             </div>
 
           </div>
 
           <div class="hero-buttons">
-            <a href="#contacto" class="btn btn-primary btn-large">
-              Solicitar servicio técnico
+
+            <a
+              href="#contacto"
+              class="btn btn-primary btn-large"
+            >
+              Solicitar servicio
             </a>
 
-            <a href="#servicios" class="btn btn-secondary btn-large">
+            <a
+              href="#servicios"
+              class="btn btn-secondary btn-large"
+            >
               Conocer servicios
             </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- Hero visual sin imagen -->
+        <div class="hero-visual">
+
+          <div class="hero-card hero-card-main">
+
+            <span class="hero-card-label">
+              SOPORTE TÉCNICO
+            </span>
+
+            <strong>
+              Equipos listos para seguir trabajando.
+            </strong>
+
+            <p>
+              Un servicio técnico pensado para responder
+              cuando tu operación más lo necesita.
+            </p>
+
+          </div>
+
+          <div class="hero-card hero-card-small">
+            <span>+</span>
+            <strong>Diagnóstico técnico</strong>
+          </div>
+
+          <div class="hero-card hero-card-small second-card">
+            <span>✓</span>
+            <strong>Mantenimiento especializado</strong>
           </div>
 
         </div>
@@ -124,7 +172,7 @@
 
 
     <!-- =========================================
-         PROBLEMA / NOSOTROS
+         NOSOTROS / PROBLEMA
          ========================================= -->
 
     <section class="section problem" id="nosotros">
@@ -132,27 +180,34 @@
       <div class="container problem-grid">
 
         <div class="problem-image">
-          <img
-            src="images/Diagnostico_tecnico.webp"
-            alt="Diagnóstico técnico especializado"
-          >
+          <div class="problem-number">01</div>
+
+          <div>
+            <span class="image-label">
+              EXPERIENCIA TÉCNICA
+            </span>
+
+            <h3>
+              Conocemos lo que está en juego cuando un equipo se detiene.
+            </h3>
+          </div>
         </div>
+
 
         <div class="problem-content">
 
-          <span class="eyebrow">
+          <p class="eyebrow">
             ENTENDEMOS TU OPERACIÓN
-          </span>
+          </p>
 
           <h2>
-            Un equipo detenido puede afectar mucho más que una sola tarea.
+            Un equipo detenido no es solo un problema técnico.
           </h2>
 
           <p>
-            Sabemos que detrás de cada equipo hay una operación que necesita
-            continuar. Por eso trabajamos con diagnósticos precisos,
-            soluciones técnicas y un servicio enfocado en reducir tiempos
-            de inactividad.
+            Es producción detenida, retrasos y una operación que
+            pierde ritmo. Por eso nuestro trabajo va más allá de
+            reparar un equipo: buscamos devolverte continuidad.
           </p>
 
           <div class="problem-items">
@@ -160,28 +215,28 @@
             <div>
               <strong>Diagnóstico preciso</strong>
               <span>
-                Identificamos la causa real del problema.
+                Identificamos el problema antes de intervenir.
               </span>
             </div>
 
             <div>
-              <strong>Respuesta técnica</strong>
+              <strong>Respuesta especializada</strong>
               <span>
-                Soluciones enfocadas en tu operación.
+                Técnicos preparados para equipos profesionales.
               </span>
             </div>
 
             <div>
-              <strong>Personal especializado</strong>
+              <strong>Repuestos originales</strong>
               <span>
-                Experiencia con equipos profesionales.
+                Soluciones confiables para mayor durabilidad.
               </span>
             </div>
 
             <div>
-              <strong>Soporte confiable</strong>
+              <strong>Acompañamiento</strong>
               <span>
-                Acompañamiento antes, durante y después.
+                Estamos presentes antes, durante y después.
               </span>
             </div>
 
@@ -204,17 +259,18 @@
 
         <div class="section-heading">
 
-          <span class="eyebrow">
-            NUESTROS SERVICIOS
-          </span>
+          <p class="eyebrow">
+            LO QUE HACEMOS
+          </p>
 
           <h2>
-            Soluciones técnicas para mantener tu operación en movimiento.
+            Servicio técnico para cada momento de tu operación.
           </h2>
 
           <p>
-            Acompañamos cada etapa del funcionamiento de tus equipos
-            con un servicio técnico especializado.
+            Intervenimos tus equipos con conocimiento técnico,
+            procesos claros y el respaldo necesario para mantener
+            tu operación en movimiento.
           </p>
 
         </div>
@@ -222,24 +278,24 @@
 
         <div class="services-grid">
 
+
           <!-- SERVICIO 1 -->
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Asesoria_personalizada.webp"
-                alt="Asesoría técnica personalizada"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Asesoria_personalizada.webp"
+              alt="Asesoría técnica personalizada"
+            >
 
             <h3>
               Asesoría personalizada
             </h3>
 
             <p>
-              Orientación técnica para tomar mejores decisiones
-              sobre tus equipos y su operación.
+              Te ayudamos a tomar decisiones técnicas según las
+              necesidades reales de tu operación.
             </p>
 
           </article>
@@ -249,20 +305,19 @@
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Diagnostico_tecnico.webp"
-                alt="Diagnóstico técnico"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Diagnostico_tecnico.webp"
+              alt="Diagnóstico técnico"
+            >
 
             <h3>
               Diagnóstico técnico
             </h3>
 
             <p>
-              Identificamos fallas y evaluamos el estado
-              de tus equipos con criterio técnico.
+              Identificamos fallas y definimos la mejor solución
+              antes de realizar cualquier intervención.
             </p>
 
           </article>
@@ -272,20 +327,19 @@
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Instalacion_y_puestaenmarcha.webp"
-                alt="Instalación y puesta en marcha"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Instalacion_y_puestaenmarcha.webp"
+              alt="Instalación y puesta en marcha"
+            >
 
             <h3>
               Instalación y puesta en marcha
             </h3>
 
             <p>
-              Aseguramos una correcta instalación para
-              que tus equipos comiencen a operar correctamente.
+              Acompañamos la instalación y verificamos el correcto
+              funcionamiento de tus equipos.
             </p>
 
           </article>
@@ -295,20 +349,19 @@
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Mantenimiento_preventivo.webp"
-                alt="Mantenimiento preventivo"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Mantenimiento_correctivo.webp"
+              alt="Mantenimiento correctivo"
+            >
 
             <h3>
-              Mantenimiento preventivo
+              Mantenimiento correctivo
             </h3>
 
             <p>
-              Reducimos riesgos y ayudamos a prevenir
-              fallas que puedan detener tu operación.
+              Intervenimos equipos con fallas para ayudarte a
+              recuperar la continuidad de tu operación.
             </p>
 
           </article>
@@ -318,20 +371,19 @@
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Mantenimiento_correctivo.webp"
-                alt="Mantenimiento correctivo"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Mantenimiento_preventivo.webp"
+              alt="Mantenimiento preventivo"
+            >
 
             <h3>
-              Mantenimiento correctivo
+              Mantenimiento preventivo
             </h3>
 
             <p>
-              Intervenimos técnicamente para recuperar
-              el funcionamiento de tus equipos.
+              Reducimos riesgos y ayudamos a prolongar la vida útil
+              de tus equipos.
             </p>
 
           </article>
@@ -341,20 +393,19 @@
 
           <article class="service-card">
 
-            <div class="service-image">
-              <img
-                src="images/Repuestos_originales.webp"
-                alt="Repuestos originales"
-              >
-            </div>
+            <img
+              class="service-image"
+              src="images/Repuestos_originales.webp"
+              alt="Repuestos originales"
+            >
 
             <h3>
               Repuestos originales
             </h3>
 
             <p>
-              Trabajamos con repuestos adecuados para
-              mantener el rendimiento y confiabilidad.
+              Utilizamos repuestos confiables para mantener el
+              rendimiento y la seguridad de tus equipos.
             </p>
 
           </article>
@@ -375,52 +426,40 @@
       <div class="container">
 
         <p class="brands-title">
-          EXPERIENCIA CON EQUIPOS Y MARCAS RECONOCIDAS
+          TRABAJAMOS CON EQUIPOS Y MARCAS RECONOCIDAS
         </p>
 
         <div class="brands-list">
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Bunn.svg.svg"
-              alt="Bunn"
-            >
-          </div>
+          <img
+            src="images/marcas/Bunn.svg.svg"
+            alt="Bunn"
+          >
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Kave.svg.svg"
-              alt="Kave"
-            >
-          </div>
+          <img
+            src="images/marcas/Kave.svg.svg"
+            alt="Kave"
+          >
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Krupps.svg.svg"
-              alt="Krupps"
-            >
-          </div>
+          <img
+            src="images/marcas/Krupps.svg.svg"
+            alt="Krupps"
+          >
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Melita.svg.svg"
-              alt="Melita"
-            >
-          </div>
+          <img
+            src="images/marcas/Melitta.svg.svg"
+            alt="Melitta"
+          >
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Unox.svg.svg"
-              alt="Unox"
-            >
-          </div>
+          <img
+            src="images/marcas/Unox.svg.svg"
+            alt="Unox"
+          >
 
-          <div class="brand-logo">
-            <img
-              src="images/marcas/Winterhalter.svg.svg"
-              alt="Winterhalter"
-            >
-          </div>
+          <img
+            src="images/marcas/Winterhalter.svg.svg"
+            alt="Winterhalter"
+          >
 
         </div>
 
@@ -438,31 +477,23 @@
       <div class="container stats-grid">
 
         <div class="stat">
-          <strong>+15</strong>
-          <span>
-            Años de experiencia técnica
-          </span>
-        </div>
-
-        <div class="stat">
-          <strong>+500</strong>
-          <span>
-            Equipos atendidos
-          </span>
-        </div>
-
-        <div class="stat">
-          <strong>6</strong>
-          <span>
-            Líneas principales de servicio
-          </span>
+          <strong>+</strong>
+          <span>Atención técnica especializada</span>
         </div>
 
         <div class="stat">
           <strong>100%</strong>
-          <span>
-            Comprometidos con tu operación
-          </span>
+          <span>Enfoque en continuidad operativa</span>
+        </div>
+
+        <div class="stat">
+          <strong>6</strong>
+          <span>Servicios técnicos especializados</span>
+        </div>
+
+        <div class="stat">
+          <strong>CO</strong>
+          <span>Cobertura en Colombia</span>
         </div>
 
       </div>
@@ -480,17 +511,17 @@
 
         <div class="section-heading">
 
-          <span class="eyebrow">
+          <p class="eyebrow">
             NUESTRO TRABAJO
-          </span>
+          </p>
 
           <h2>
-            Experiencia técnica aplicada en cada servicio.
+            Soluciones técnicas aplicadas en operaciones reales.
           </h2>
 
           <p>
-            Algunos de los trabajos y proyectos en los que
-            hemos acompañado a nuestros clientes.
+            Cada servicio representa un equipo recuperado y una
+            operación que puede seguir avanzando.
           </p>
 
         </div>
@@ -498,48 +529,36 @@
 
         <div class="works-grid">
 
-          <div class="work-item">
-            <img
-              src="images/portafolio/Trabajo_01.webp"
-              alt="Trabajo realizado por Sermastech 1"
-            >
-          </div>
+          <img
+            class="work-item"
+            src="images/portafolio/Trabajo_01.webp"
+            alt="Trabajo realizado por Sermastech 1"
+          >
 
-          <div class="work-item">
-            <img
-              src="images/portafolio/Trabajo_02.webp"
-              alt="Trabajo realizado por Sermastech 2"
-            >
-          </div>
+          <img
+            class="work-item"
+            src="images/portafolio/Trabajo_02.webp"
+            alt="Trabajo realizado por Sermastech 2"
+          >
 
-          <div class="work-item">
-            <img
-              src="images/portafolio/Trabajo_03.webp"
-              alt="Trabajo realizado por Sermastech 3"
-            >
-          </div>
+          <img
+            class="work-item"
+            src="images/portafolio/Trabajo_03.webp"
+            alt="Trabajo realizado por Sermastech 3"
+          >
 
-          <div class="work-item">
-            <img
-              src="images/portafolio/Trabajo_04.webp"
-              alt="Trabajo realizado por Sermastech 4"
-            >
-          </div>
+          <img
+            class="work-item"
+            src="images/portafolio/Trabajo_04.webp"
+            alt="Trabajo realizado por Sermastech 4"
+          >
 
-          <div class="work-item">
-            <img
-              src="images/portafolio/Trabajo_05.webp"
-              alt="Trabajo realizado por Sermastech 5"
-            >
-          </div>
+          <img
+            class="work-item"
+            src="images/portafolio/Trabajo_05.webp"
+            alt="Trabajo realizado por Sermastech 5"
+          >
 
-        </div>
-
-
-        <div class="center-button">
-          <a href="#contacto" class="btn btn-outline">
-            Hablemos sobre tu equipo
-          </a>
         </div>
 
       </div>
@@ -555,20 +574,20 @@
 
       <div class="container coverage-grid">
 
-        <div class="coverage-content">
+        <div>
 
-          <span class="eyebrow">
+          <p class="eyebrow">
             COBERTURA NACIONAL
-          </span>
+          </p>
 
           <h2>
             Estamos donde tu operación nos necesita.
           </h2>
 
           <p>
-            Brindamos atención técnica en diferentes ciudades
-            y zonas del país, acompañando a empresas que necesitan
-            mantener sus equipos en funcionamiento.
+            Brindamos acompañamiento técnico en diferentes regiones
+            de Colombia, conectando experiencia, respuesta y soporte
+            especializado.
           </p>
 
           <div class="cities">
@@ -576,26 +595,19 @@
             <span>Medellín</span>
             <span>Cali</span>
             <span>Barranquilla</span>
-            <span>Bucaramanga</span>
             <span>Cartagena</span>
+            <span>Bucaramanga</span>
           </div>
 
         </div>
 
 
-        <div class="map-image">
-
-          <!--
-            IMPORTANTE:
-            Si tu archivo del mapa termina en .png,
-            este nombre debe coincidir exactamente.
-
-            Por ahora usamos mapacolombia.png.
-          -->
+        <div class="map-container">
 
           <img
             src="images/cobertura/mapacolombia.png"
-            alt="Cobertura nacional Sermastech en Colombia"
+            alt="Mapa de cobertura de Sermastech en Colombia"
+            class="coverage-map"
           >
 
         </div>
@@ -616,12 +628,13 @@
         <div>
 
           <h2>
-            Tu operación no tiene que detenerse por un equipo.
+            Cuando tus equipos necesitan respuesta,
+            necesitas un equipo técnico que responda.
           </h2>
 
           <p>
-            Cuéntanos qué está pasando y encontremos
-            juntos la mejor solución técnica.
+            Cuéntanos qué está pasando y encontraremos la mejor
+            manera de ayudarte.
           </p>
 
         </div>
@@ -629,14 +642,15 @@
 
         <div class="cta-actions">
 
+          <!-- El número lo configuramos después -->
           <a
             href="#"
-            class="btn btn-white btn-large whatsapp-button"
+            class="btn btn-white btn-large"
           >
-            Solicitar atención
+            Solicitar servicio
           </a>
 
-          <span class="whatsapp-link">
+          <span class="contact-note">
             Atención técnica especializada
           </span>
 
@@ -670,7 +684,7 @@
 
           <p>
             Servicio técnico especializado para equipos
-            gastronómicos e industriales.
+            gastronómicos industriales.
           </p>
 
         </div>
@@ -679,12 +693,12 @@
         <div>
 
           <h4>
-            Navegación
+            NAVEGACIÓN
           </h4>
 
-          <a href="#nosotros">Nosotros</a>
+          <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
-          <a href="#trabajos">Trabajos</a>
+          <a href="#trabajos">Trabajos realizados</a>
           <a href="#cobertura">Cobertura</a>
 
         </div>
@@ -693,16 +707,13 @@
         <div>
 
           <h4>
-            Contacto
+            SERVICIOS
           </h4>
 
-          <a href="#contacto">
-            Solicitar servicio
-          </a>
-
-          <a href="#contacto">
-            Atención nacional
-          </a>
+          <a href="#servicios">Diagnóstico técnico</a>
+          <a href="#servicios">Mantenimiento preventivo</a>
+          <a href="#servicios">Mantenimiento correctivo</a>
+          <a href="#servicios">Repuestos originales</a>
 
         </div>
 
@@ -710,9 +721,7 @@
 
 
       <div class="footer-bottom">
-
         © 2026 Sermastech. Todos los derechos reservados.
-
       </div>
 
     </div>
@@ -720,16 +729,22 @@
   </footer>
 
 
-  <!-- WHATSAPP FLOTANTE -->
+  <!-- WHATSAPP:
+       Lo dejamos preparado y después ponemos
+       el número real.
+  -->
 
+  <!--
   <a
-    href="#"
-    class="whatsapp-floating whatsapp-button"
+    href="https://wa.me/57NUMERO"
+    class="whatsapp-floating"
+    target="_blank"
+    rel="noopener noreferrer"
     aria-label="Contactar por WhatsApp"
   >
     WhatsApp
   </a>
-
+  -->
 
 </body>
 </html>
